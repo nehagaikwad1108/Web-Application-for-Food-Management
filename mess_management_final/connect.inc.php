@@ -1,0 +1,10 @@
+<?php
+	$host='localhost';
+	$username='root';
+	$pass='';
+	$db='mess_management';
+	if(@!mysql_connect($host,$username,$pass)||!mysql_select_db($db))
+	{
+		die(mysql_error());
+	}
+?>
